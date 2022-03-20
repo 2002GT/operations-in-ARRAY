@@ -1,0 +1,32 @@
+bool searchEle(int a[],int x)
+{   
+    // add code here.
+   for(int i=0;a[i]!=-1;i++){
+       if(a[i] == x) return true;
+   }
+   return false;
+}
+bool insertEle(int a[],int y,int yi)
+{
+  // add code here.
+   int size=0;
+   for(int i=0;a[i]!=-1;i++) size++;
+   if(yi >= size) return false;
+   a[yi] = y;
+   return true;
+}
+bool deleteEle(int a[],int z)
+{
+    int size=0, index;
+   for(int i=0;a[i]!=-1;i++) size++;
+   for(int i=0;i<size;i++){
+       if(a[i]==z){
+           index = i;
+           break;
+       }
+       
+       }
+   for(int j=index;j<size;j++){
+       a[j] = a[j+1];
+   }
+}
