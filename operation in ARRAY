@@ -2,12 +2,15 @@ bool searchEle(int a[],int x)
 {   
     // add code here.
    for(int i=0;a[i]!=-1;i++){
+   
        if(a[i] == x) return true;
    }
+   
    return false;
 }
 bool insertEle(int a[],int y,int yi)
 {
+
   // add code here.
    int size=0;
    for(int i=0;a[i]!=-1;i++) size++;
